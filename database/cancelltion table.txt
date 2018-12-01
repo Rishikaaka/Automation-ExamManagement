@@ -1,0 +1,8 @@
+create table cancellation
+(
+cid int primary key identity(100,1),
+fid varchar(10),
+dutiesid int,
+reason varchar(30),
+status varchar(30),
+datepost varchar(20));

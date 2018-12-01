@@ -1,0 +1,53 @@
+﻿<%@ Master Language="VB" CodeFile="FacultyMaster.master.vb" Inherits="FacultyMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    
+     <link href="styles/menu.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style=" margin-top:20px;background-color:#f0f0f0; background-image: url('images/background.jpg');">
+    <center><asp:Image ID="Image1" runat="server" ImageUrl="~/images/titleimage.png" 
+        Height="96px" Width="1255px" />
+    </center>
+ <ul id="menu">
+ <li><a href="#">Home</a>
+    <ul>
+    </ul>
+    </li>
+     <li><a href="facultyprofile.aspx">Profile</a>
+    <%--<ul>
+     <li><a href="addProfile.aspx">Add</a></li>
+     <li><a href="modifyProfile">Modify</a></li>
+    </ul>--%>
+    </li>
+     <li><a href="viewfacultyduties.aspx">ViewDuties</a>
+    <%--<ul>
+     <li><a href="viewfacultyduties.aspx">View</a></li>
+    </ul>--%>
+    </li>
+     <li><a href="#">Cancellation</a>
+    <ul>
+     <li><a href="adddutiescancellation.aspx">Add</a></li>
+     <li><a href="viewdutiescancellation">view</a></li>
+    </ul>
+    </li>
+   
+
+    
+    <li><a href="home.aspx">Logout</a></li>
+</ul>
+<div id="ai" >
+    <form id="form1" runat="server">
+    
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

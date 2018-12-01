@@ -1,0 +1,123 @@
+﻿<%@ Master Language="VB" CodeFile="admin.master.vb" Inherits="admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    
+     <link href="styles/menu.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style=" margin-top:20px;background-color:#f0f0f0; background-image: url('images/background.jpg');">
+    <center><asp:Image ID="Image1" runat="server" ImageUrl="~/images/titleimage.png" 
+        Height="96px" Width="1255px" />
+    </center>
+ <ul id="menu">
+ <li><a href="#">Courses</a>
+    <ul>
+    <li><a href="addcourse.aspx">Add</a></li>
+    <li><a href="addcourseexcel.aspx">Add Excel Sheet</a></li>
+    <li><a href="viewcoursedetails.aspx">View</a></li>
+   </ul>
+    </li>
+     <li><a href="#">Seatallots</a>
+    <ul>
+     <li><a href="ViewSeatAllots.aspx">View</a></li>
+    </ul>
+    </li>
+     <li><a href="#">Studroomsallot</a>
+    <ul>
+     <li><a href="ViewStudRoomsAllot.aspx">View</a></li>
+    </ul>
+    </li>
+    <li><a href="#">Examtimetable</a>
+    <ul>
+    <li><a href="addexamtimetableexcel.aspx">Add Excel Sheet</a></li>
+    <li><a href="viewExamTimeTableDetails.aspx">View</a></li>
+   </ul>
+    </li>
+
+
+    <li><a href="#">Student</a>
+    <ul>
+    <li><a href="addstudent.aspx">Add</a></li>
+    <li><a href="addstudentexcel.aspx">Add Excel Sheet</a></li>
+    <li><a href="viewstudentdetails.aspx">View</a></li>
+    
+    </ul>
+    </li>
+    <li><a href="#">Faculty</a>
+    <ul>
+    <li><a href="addfaculty.aspx">Add</a></li>
+    <li><a href="ViewFacultyDetails.aspx">View</a></li>
+    </ul>
+    </li>
+    <li><a href="#">Subjects</a>
+    <ul>
+    <li><a href="AddSubjects.aspx">Add</a></li>
+    <li><a href="ViewSubjects.aspx">View</a></li>
+    </ul>
+    </li>
+    <li><a href="#">Timetable</a>
+    <ul>
+    <li><a href="Timetables.aspx">Add</a></li>
+    <li><a href="ViewTimetables.aspx">View</a></li>
+    </ul>
+    </li>
+    
+    <li><a href="#">Rooms</a>
+    <ul>
+    <li><a href="AddRooms.aspx">Add</a></li>
+    <li><a href="ViewRooms.aspx">View</a></li>
+    </ul>
+    </li>
+    <li><a href="#">Exam</a>
+    <ul>
+    <li><a href="AddExam.aspx">Add</a></li>
+    <li><a href="ViewExams.aspx">View</a></li>
+    </ul>
+    </li>
+   
+    <li><a href="#">Rooms</a>
+    <ul>
+    <li><a href="AddRooms.aspx">Add</a></li>
+    <li><a href="ViewRooms.aspx">View</a></li>
+    </ul>
+    </li>
+    <li><a href="#">Duties</a>
+    <ul>
+    <li><a href="ViewReportExamDuties.aspx">View</a></li>
+    </ul>
+    </li>
+    <li><a href="#">Absents</a>
+    <ul>
+    <li><a href="viewabsentees.aspx">View</a></li>
+    </ul>
+    </li>
+    <li><a href="#">Studentabsentee</a>
+    <ul>
+    <li><a href="viewStudentAbsentee.aspx">View</a></li>
+    </ul>
+    </li>
+    <li><a href="#">Reports</a>
+    <ul>
+    <li><a href="#">Allotment</a></li>
+    <li><a href="ViewReportAvailableFaculty.aspx">viewAvailableFaculty</a></li>
+    <li><a href="#">Asignfaculty</a></li>
+    <li><a href="ViewReportExamDuties.aspx">Viewexamdetails</a></li>
+    </ul>
+    </li>
+    <li><a href="home.aspx">Logout</a></li>
+</ul>
+<div id="ai" >
+    <form id="form1" runat="server">
+    
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

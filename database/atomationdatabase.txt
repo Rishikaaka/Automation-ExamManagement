@@ -1,0 +1,107 @@
+create table courses
+(
+courseid int primary key identity(101,1),
+coursecode varchar(30),
+roomid int);
+
+
+create table student(
+sid varchar(50) primary key,
+sname varchar(50),
+coursecode varchar(30),
+phone varchar(15)
+);
+
+create table faculty(
+fid varchar(50) primary key,
+fname varchar(50),
+branch varchar(50),
+phone varchar(20),
+password varchar(50));
+
+create table subjects(
+subjectid int primary key identity(101,1),
+subjectcode varchar(10),
+subjectname varchar(50),
+year int,
+sem varchar(10));
+
+create table examtimetable(
+examid int primary key identity(101,1),
+examtype varchar(30),
+year int,
+sem int,
+branch varchar(30),
+examdate varchar(20),
+session varchar(15),
+day varchar(20),
+subjectname varchar(50),
+);
+
+create table timetable(
+tid int primary key identity(101,1),
+fid varchar(50),
+day varchar(15),
+class1 varchar(50),
+class2 varchar(50),
+class3 varchar(50),
+class4 varchar(50),
+class5 varchar(50),
+class6 varchar(50),
+class7 varchar(50));
+
+create table rooms(
+roomid int primary key identity(101,1),
+block varchar(10),
+roomno int,
+capacity int);
+
+
+create table courses
+(
+courseid int primary key identity(101,1),
+coursecode varchar(30),
+roomid int);
+
+create table studroomsallot
+(srid int primary key identity(1,1),
+roomid int,
+coursecode varchar(30));
+
+create table duties(
+dutiesid int primary key identity(100,1),
+fid varchar(50),
+roomid int,
+block varchar(10),
+day varchar(20));
+
+create table studentabsentee(
+sid varchar(50) primary key,
+examid int);
+
+change to 
+
+create table studentabsentee
+(
+said int primary key identity(101,1),
+examid int,
+roomid int,
+sids varchar(100));
+
+create table cancellation
+(
+cid int primary key identity(100,1),
+foreign key(fid) references faculty(fid));
+dutiesid int,
+reason varchar(30),
+status varchar(30),
+datepost varchar(20));
+
+
+
+create table admin(username varchar(20), password varchar(20),type varchar(20));
+
+select * from admin
+
+insert into admin values('admin','admin','admin');
+insert into admin values('rishika','rishika','faculty');
